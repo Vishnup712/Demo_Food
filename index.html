@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Food Ordering System</h1>
+    <div id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <img src="https://images.pexels.com/photos/6260921/pexels-photo-6260921.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Biriyani" class="food-image" />
+            <span>Biriyani - 150</span>
+            <button onclick="addToOrder('Biriyani', 150, 'https://images.pexels.com/photos/6260921/pexels-photo-6260921.jpeg?auto=compress&cs=tinysrgb&w=600')">Add to Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.pexels.com/photos/17910326/pexels-photo-17910326/free-photo-of-a-dish-with-rice-and-vegetables.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fried Rice" class="food-image" />
+            <span>Fried Rice - 140</span>
+            <button onclick="addToOrder('Fried Rice', 140, 'https://images.pexels.com/photos/17910326/pexels-photo-17910326/free-photo-of-a-dish-with-rice-and-vegetables.jpeg?auto=compress&cs=tinysrgb&w=600')">Add to Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.pexels.com/photos/13243817/pexels-photo-13243817.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Meals" class="food-image" />
+            <span>Meals - 110</span>
+            <button onclick="addToOrder('Meals', 110, 'https://images.pexels.com/photos/13243817/pexels-photo-13243817.jpeg?auto=compress&cs=tinysrgb&w=600')">Add to Order</button>
+        </div>
+    </div>
+
+    <div id="order-summary">
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+        <p>Total: <span id="total-price">0</span></p>
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

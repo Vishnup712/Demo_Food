@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f1b84e;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #34495e;
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Menu and Order Sections */
+#menu, #order-summary {
+    display: inline-block;
+    width: 40%;
+    margin: 20px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.menu-item {
+    display: flex; /* Changed to flex to align items horizontally */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 20px;
+}
+
+.food-image {
+    width: 80px; /* Adjusted width for better visibility */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between image and text */
+    border-radius: 5px; /* Optional: round the corners of the images */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+/* Button Styling */
+button {
+    margin-left: 10px;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    background-color: #16a085;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1abc9c;
+    transform: translateY(-2px);
+}
+
+#order-summary button {
+    background-color: #2980b9;
+    font-size: 1.2em;
+}
+
+#order-summary button:hover {
+    background-color: #3498db;
+}
+
+/* Order List and Total Price */
+#order-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#order-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    font-size: 1.2em;
+}
+
+#order-summary p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #34495e;
+}
+
+#order-summary p span {
+    color: #2c3e50;
+}
+
+/* Center Content */
+#menu, #order-summary {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
